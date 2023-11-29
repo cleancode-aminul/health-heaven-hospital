@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home |Doctor List</title>
+<!-- custom css link here -->
+<link rel="stylesheet" href="css/view.css">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<!-- aos animation -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<!-- font awesome link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!-- favicon -->
+<link rel="icon" href="logo/images.png" type="image/png" sizes="32x32">
+</head>
+
+<body>
+
+  <!-- top section here start-->
+  <div class="container-fluid top" data-aos="fade-down">
+    <div class="container">
+      <div class="top-hero">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col part_one">
+            <span><i class="fa-solid fa-location-dot"></i> 9/A, Dhanmondi, Dhaka, 1210 </span>
+            <span id="extr"> <i class="fa-solid fa-phone-volume fa-fade" style="color: #ffffff;"></i> +8809638824033
+              </h4></span>
+          </div>
+          <div class="col">
+            <span class="top-icons">
+              <a href="https://www.facebook.com/profile.php?id=100007864486994" target="_blank"> <i
+                  class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100007864486994" target="_blank"><i
+                  class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100007864486994" target="_blank"> <i
+                  class="fa-brands fa-whatsapp"></i></a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- top section here end-->
+
+  <div class="container" data-aos="fade-down">
+    <div class="containers main-nav ">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid t-nav">
+          <h2 data-aos="fade-right" data-aos-duration="2000"><a href="">Health <span>Heaven</span></a></h2>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active" aria-current="page" href="viewall.html">Find A Doctor</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active" aria-current="page" href="services.html">Services <i
+                    class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="services.html">Our Services </a>
+                  <a href="test-price.html">Test and Service Charge</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active" aria-current="page" href="team.html">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <button id="button-btn"><a href="appointment.html" class="text-light">Make an appointment</a></button>
+
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="top-car">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-sm-1 caro-setting">
+              <div class="col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="car-set">
+                  <h1>Reliable <span>services</span> you can <span>trust!</span></h1>
+                  <p>
+                    Choose our reliable medical services, built on a foundation of trust. Our commitment ensures you
+                    receive dependable care, always prioritizing your well-being and health.</p>
+                  <button>GET STARTED</button>
+                  <button id="btn"><a href="appointment.html" style="color: #fff;">GET APPOINTMENT</a></button>
+                </div>
+              </div>
+              <div class="col" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <img src="https://i.postimg.cc/TwQ4tNHt/11.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-sm-1 caro-setting">
+              <div class="col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="car-set">
+                  <h1>Efficient Care <span>Your</span> Health<span> Our Priority!</span></h1>
+                  <p>At Efficient Care, your health is our priority. We are dedicated to providing efficient and
+                    reliable healthcare services that prioritize your well-being.</p>
+                  <button>GET STARTED</button>
+                  <button id="btn">GET APPOINTMENT</button>
+                </div>
+              </div>
+              <div class="col" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <img src="https://i.postimg.cc/wT502GyL/100.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-sm-1 caro-setting">
+              <div class="col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="car-set">
+                  <h1>We provide <span>medical</span> services that you can <span>trust!</span></h1>
+                  <p>At our center, we deliver medical services you can trust! Our dedicated team prioritizes your
+                    well-being, ensuring reliable and compassionate care.</p>
+                  <div class="banner-btn">
+                    <button>GET STARTED</button>
+                    <button id="btn">GET APPOINTMENT</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <img src="https://i.postimg.cc/KcBNcH5w/120.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- first section start -->
+  <div class="container parent-divs">
+    <div class="row row-cols-1 row-cols-md-3 g-2">
+      <div class="col">
+        <div class="sec_one">
+          <h3>Opening Hours</h3>
+          <div class="time_table d-flex">
+            <div class="day_schedule w-50">
+              <span>Sat- Sun----------------</span>
+              <br>
+              <span>Mon- Tue --------------</span>
+              <br>
+              <span>Wed- Thurs ------------</span>
+              <br>
+              <span>Friday ------------------</span>
+            </div>
+            <div class="date_schedule">
+              <span>8:00 AM - 11:00 PM</span>
+              <br>
+              <span>8:00 AM - 11:00 PM</span>
+              <br>
+              <span>8:00 AM - 11:00 PM</span>
+              <br>
+              <span>8:00 AM - 12:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="sec_one">
+          <h3>Doctors TimeTable</h3>
+          <p>
+            Doctors manage diverse schedules, balancing patient appointments, surgeries, administrative tasks, and
+            continuous learning to provide optimal healthcare consistently.</p>
+          <button id="btn"><a href="/images/hopital time.pdf" download class="text-light">Download PDF <i
+                class="fa-solid fa-download fa-fade" style="color: #fff;"></i> </a></button>
+        </div>
+      </div> <br> <br>
+      <div class="col">
+        <div class="sec_one">
+          <h3>Help Care </h3>
+          <h4><i class="fa-solid fa-phone-volume fa-fade" style="color: #1d3358;"></i> +8809638824033</h4>
+          <p>
+            Hospital website provides crucial emergency contacts, ensuring swift assistance. Accessible information
+            saves lives, fostering a responsive and caring community.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br>
+  <br><br><br>
+  <br>
+
+
+  <div class="container mt-5" data-aos="fade-up" data-aos-duration="1000">
+    <div class="servici">
+      <h1 class="text-center">Our Qualified Doctors</h1>
+      <div class="medi-para">
+        <img src="logo/Untitled.png" class="card-img-top img-fluid " alt="doctor images here.">
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-3 row-cols-xs-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/cLxkzFT8/14.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Zakir Ahmed </h5>
+            <p class="card-text"> Chest Medicine </p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01311625970 </p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/25vHbgSM/16.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title"> Professor (Dr.) Md. Shamsul Alam </h5>
+            <p class="card-text"> Dental and Maxillofacial Surge </p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01795518405</p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/wxh7f21z/17.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Md. Farid Uddin</h5>
+            <p class="card-text"> Consultant Urological Surgeon</p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01738-880134 (OPD)</p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/NfHbPW1M/2.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Utpal Sen</h5>
+            <p class="card-text"> Strabismus & Low vision Specialist</p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01839392525</p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/FK7x38sN/3.webp" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Arun Kumar Pal</h5>
+            <p class="card-text"> Colorectal Surgery</p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: +8801710972572</p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/GpWvYp5x/4.webp" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Rushdana Rahman (Toma)</h5>
+            <p class="card-text"> Gynaecology & Obstetrics </p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: +8801716603667</p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/jd2Cxb8x/5.webp" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Sharmin Ferdous (Koly)</h5>
+            <p class="card-text"> Gynaecology & Obstetrics</p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: +8801720211744</p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/8CS16Qbr/7.webp" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Ayesha Siddiqua</h5>
+            <p class="card-text"> Gynaecology & Obstetrics</p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: +8801819401128</p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/PxFsKB1y/8.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title"> DR. SUDHAKAR SARKER</h5>
+            <p class="card-text"> Clinical and Interventional Cardiology</p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01795417733</p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/Dwg2Lppj/9.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title"> PROF. DR. NAZIR AHAMMED CHOWDHURY</h5>
+            <p class="card-text"> Interventional Cardiology</p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01715771179</p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/zvZm9TPH/10.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title"> PROF. (DR.) MD. MAMUNUR RASHID (SIZAR)</h5>
+            <p class="card-text"> Clinical and Interventional Cardiology</p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01725029323</p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/q7z9q1PC/12.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title"> DR. MD. SOROAR HOSSAIN </h5>
+            <p class="card-text"> Chest Medicine </p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01730918408 </p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/g0ZN1194/13.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title"> DR. NAEEM HOSSAIN </h5>
+            <p class="card-text"> Chest Medicine </p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01311625970 </p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/8CMmZWW0/6.webp" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title"> DR. TOIOBA AKTAR</h5>
+            <p class="card-text"> Dermatology and Venereology (Skin & VD) </p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01795518405</p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/YCgF7794/hARUN.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title"> Major General Professor Dr. H. R. Harun (retd.) </h5>
+            <p class="card-text"> Dental and Maxillofacial Surgery </p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01552441902 </p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/GtVB0gnJ/18.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title"> DR. TANJINA HOSSAIN </h5>
+            <p class="card-text"> Endocrinology and Diabetology</p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01751920103 </p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/rs0m9GRd/19.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title"> DR. MD. SHAYEDAT ULLAH </h5>
+            <p class="card-text"> Endocrinology and Diabetology</p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01751920103 </p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/rpfwXZS0/20.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title"> PROF. (DR.) PROJESH KUMAR ROY </h5>
+            <p class="card-text"> Gastroenterology</p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01790175862 </p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/fy9zdw1m/21.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title">PROF. NASIMA AKHTAR </h5>
+            <p class="card-text"> Dental Sergon </p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01712656285 </p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/jSX72XHK/22.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title">PROF. BRIG. GEN. A. K. MD. MUSTAFA ABEDIN (RETD)</h5>
+            <p class="card-text"> Haematology </p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01704945229 </p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/XJTZmDbK/23.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title">DR. FARHANA AFROZ</h5>
+            <p class="card-text"> Clinical Pathology </p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01704945229 </p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/L6FYV7v2/24.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title">PROF. SK. ABDUL FATTAH </h5>
+            <p class="card-text"> nternal Medicine & Pulmonology </p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01952070967 </p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/wxh7f21z/17.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Md. Farid Uddin</h5>
+            <p class="card-text"> Consultant Urological Surgeon</p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01738-880134 (OPD)</p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://i.postimg.cc/q7z9q1PC/12.png" class="card-img-top img-fluid " alt="doctor images here.">
+          <div class="card-body">
+            <h5 class="card-title"> DR. MD. SOROAR HOSSAIN </h5>
+            <p class="card-text"> Chest Medicine </p>
+            <p class="card-text">Health Heaven Hospital</p>
+            <p class="card-text"> Hotline: 01730918408 </p>
+          </div>
+          <button id="showTableButton"><a href="appointment.html" style="color: #fff;">Appointment</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <table class="app-table" id="consultationTable">
+    <thead>
+      <div id="closeButton">&#10006; fsf</div>
+      <tr>
+        <th>Day Name</th>
+        <th>Consultation Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Saturday</td>
+        <td>1:00 PM - 4:00 PM</td>
+      </tr>
+      <tr id="t-color">
+        <td>Sunday</td>
+        <td>9:00 AM - 12:00 PM</td>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>2:00 PM - 5:00 PM</td>
+      </tr>
+      <tr id="t-color">
+        <td>Tuesday</td>
+        <td>Closed</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>3:00 PM - 6:00 PM</td>
+      </tr>
+      <tr id="t-color">
+        <td>Thursday</td>
+        <td>1:00 PM - 4:00 PM</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>1:00 PM - 4:00 PM</td>
+      </tr>
+      <tr id="tb-color">
+        <td>For Appointment, Please Call Within</td>
+        <td>++01300000000</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+
+
+  <!-- footer section start -->
+  <div class="container-fluid footer mt-5" data-aos="fade-up" data-aos-duration="2000">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 row-cols-sm-1 g-4">
+        <div class="col" data-aos="fade-right">
+          <div class="section-1">
+            <h3>Health Heaven Hospital Limited</h3>
+            <h4>Address:House#32,Road #27/A,Dhanmondi,Dhaka 1209</h4>
+            <h4>Phone:+8809638824033, +8801328834470</h4>
+            <h4>HotLine:+8809638824033</h4>
+            <h4>Email: info@healthheavenhospital.com</h4>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up">
+          <div class="section-1 text-center">
+            <img src="logo/images.png" style="width: 100px;" alt="logo here">
+            <div class="footer-icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-left">
+          <div class="section-1">
+            <h3>Find Us On Map</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58417.9896180138!2d90.32738518978087!3d23.77858583130296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bfb1327cc8af%3A0x459215d0a9baf148!2sDhanmondi%2027%20Police%20Box!5e0!3m2!1sen!2sbd!4v1699970421757!5m2!1sen!2sbd"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" class="img-fluid pt-1"></iframe>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="lost d-flex">
+        <div class="col">
+          <div class="section-1">
+            <a href="">Privacy Policy | Terms & Conditions</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="section-1">
+            <a href="">Copyright © 2023 Health Heaven Hospital Limited.</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="section-1">
+            <a href=""> Feedback | Security</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footere section end -->
+
+  <script src="/js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- aos animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+
+    AOS.init();
+    // table js
+    $(document).ready(function () {
+      $("#showTableButton").click(function () {
+        $("#consultationTable, #closeButton").toggle();
+      });
+
+      $("#closeButton").click(function () {
+        $("#consultationTable, #closeButton").hide();
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

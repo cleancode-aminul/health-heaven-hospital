@@ -1,0 +1,1434 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+:root {
+  --main-bg-color: #ffffff;
+  --primaryColor: #3498db;
+  --secondary-bg-color: #f4f5fb;
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Inria Serif", serif;
+  --bangla-font: "Tiro Bangla", serif;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(238, 238, 238); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3498db; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #184177; 
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--main-bg-color);
+}
+
+/* top section start */
+.t-nav h2{
+  color:  #3498db;
+  margin-right: 5rem;
+  font-weight: 800;
+}
+.t-nav span{
+  color:  #184173;
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 800;
+}
+.top {
+  background-color: #3498db;
+}
+#extr {
+  margin: 0 0.5rem;
+}
+.top-hero span {
+  color: #ffff;
+  padding: 2px 0;
+}
+.top-icons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.top-icons a{
+  color: #ffff;
+}
+.top-icons i {
+  padding: 0 0.5rem;
+}
+#top-car {
+  background-color: #3498db;
+}
+/* menu bar section here */
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: rgb(87, 87, 87) !important;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 5px;
+  padding: 0;
+  z-index: 1000;
+  border: none;
+  position: relative !important;
+}
+.navbar-nav .nav-link::before,
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #3498db;
+  transition: width 0.3s ease;
+}
+.navbar-nav .nav-link::before {
+  right: 0;
+}
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* navbar section here */
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  padding: 0px;
+  margin: 0px 0rem;
+}
+#button-btn {
+  color: #ffff;
+  font-weight: semi-bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  transition: 0.3s linear;
+}
+#button-btn:hover {
+  color: #ffff;
+  background-color: #184173;
+}
+/* dropdown section here */
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  position: absolute;
+  display: none;
+  padding: 20px !important;
+  box-shadow: 1px 1px 5px 1px #b6b4b4;
+  background-color: var(--main-bg-color);
+  z-index: 2;
+}
+.dropdown-content a {
+  display: block;
+  width: 260px;
+  margin: 10px;
+  color: rgb(87, 87, 87);
+  text-decoration: none;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a:hover {
+  color: #fff;
+  animation: float 3s ease-in-out;
+  background-color: #3498db;
+  padding: 2px 5px;
+  z-index: 1000;
+  cursor: pointer;
+}
+/* other dropdown here */
+.dropdown-1 {
+  position: relative;
+}
+.dropdown-content-1 {
+  position: absolute;
+  display: none;
+  padding: 20px !important;
+  box-shadow: 1px 1px 5px 1px #b6b4b4;
+  background-color: var(--main-bg-color);
+  z-index: 2;
+}
+.dropdown-content-1 a {
+  display: block;
+  width: 390px;
+  margin: 10px;
+  color: rgb(87, 87, 87);
+  text-decoration: none;
+}
+.dropdown-1:hover .dropdown-content-1 {
+  display: block;
+}
+.dropdown-content-1 a:hover {
+  color: #3498db;
+  animation: float 3s ease-in-out;
+  z-index: 1000;
+}
+.carousel {
+  position: relative;
+  height: 80vh;
+  z-index: 1; /* Set a z-index for the carousel */
+}
+.carousel-item img {
+  height: 500px;
+}
+
+/* total health care solutions start */
+
+.health_section {
+  margin-top: 1.5rem !important;
+}
+.health_section .col {
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center !important;
+}
+.health_section .card {
+  display: flex;
+
+
+  border: 2px solid rgb(255, 254, 254) !important;
+}
+.health_section .card img {
+  border-radius: 50px 10px 50px 0px;
+  border: 2px solid rgb(242, 242, 242);
+  transition: all 0.3s linear;
+  width: 90% !important;
+}
+.health_section .card img:hover {
+  transform: scale(1.1);
+  border-radius: 10px 50px 10px 50px;
+}
+.health_section h3 {
+  line-height: 2;
+  font-size: 17px;
+}
+h1 {
+  color: #184173 !important;
+}
+
+/* total health care solutions end */
+
+/* about of our hospital */
+
+.hospital-title h2 {
+  color: #184173;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.hospital-title h1 {
+  color: #3498db;
+  font-size: 2.6rem;
+  font-weight: 700;
+  font-family: var(--primary-font);
+}
+.summary p {
+  color: #515457;
+  font-size: 16px;
+  font-family: sans-serif !important;
+  line-height: 24px;
+  text-align: justify;
+  font-weight: 400;
+}
+.sum-image img {
+  width: 50rem;
+  border-radius: 1rem;
+}
+.button {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 50px;
+  background-color: #3498db;
+  border: none !important;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  z-index: -2;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #184177;
+  transition: all 0.3s;
+  border-radius: 5px;
+  z-index: -1;
+}
+.button:hover {
+  color: #fff;
+}
+.button:hover:before {
+  width: 100%;
+}
+
+/* alert section here */
+.alert-sec {
+  background-color: #f4f5fb;
+  width: 100%;
+  height: auto;
+}
+.alert-sec h1 {
+  color: #3498db;
+  font-size: 28px;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.alert-sec h4 {
+  color: #636363;
+  text-align: justify;
+  font-size: 18px;
+}
+/* owl carousel section here */
+.owl-carousel .col {
+  width: 300px;
+  text-align: center;
+}
+.owl-carousel .col .card h5 {
+  color: #636363;
+  font-size: 15px;
+}
+.owl-carousel .col .card p {
+  color: #636363;
+  font-size: 14.5px;
+  line-height: 1;
+  margin: 6px;
+}
+.card {
+  border: 1px solid rgb(238, 238, 238) !important;
+  width: 240px;
+  height: 290px;
+  padding: 0;
+}
+.card img {
+  width: 200px !important;
+  height: 180px;
+  margin: 10px 0px 1px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.owl-controls {
+  display: flex;
+  justify-content: flex-start;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  padding-top: -32rem;
+}
+#own:active {
+  color: #fff;
+  background-color: rgb(61, 61, 245);
+}
+#ownn:active {
+  color: #fff !important;
+  background-color: rgb(61, 61, 245);
+}
+#ownn a:active {
+  color: #fff;
+  background-color: rgb(61, 61, 245);
+}
+
+.owl-prev,
+.owl-next {
+  display: inline-block;
+  margin: -5px 10px 5px 10px !important;
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* card hover */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  background-color: #3498db;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.card:hover .overlay {
+  height: 100%;
+}
+
+.overlay p {
+  position: relative;
+  display: block;
+  top: 38%;
+  left: 14%;
+  width: 160px;
+  padding: 3px 5px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: 0.3s linear;
+}
+.overlay a {
+  color: #191919;
+  font-weight: 400;
+  font-size: 0.9rem;
+  width: 10px;
+}
+.overlay a:active {
+  color: aliceblue;
+}
+.overlay p:active {
+  background-color: #3498db;
+}
+.overlay p:hover {
+  animation: float 1s ease-in-out;
+}
+
+/* service and facilities section here */
+.services {
+  text-align: center;
+  border-radius: 8px;
+  width: 263px !important;
+  /* background-color: #edeef2; */
+  background-color: #3db1ff;
+  box-shadow: 0px 0px 5px 0px #ededed;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s ease-in-out;
+}
+.services:hover {
+  transform: scale(1.1);
+}
+.doc-sec {
+  background-color: #f5f5f5;
+}
+.servici {
+  margin-top: 2rem;
+}
+.servici h1 {
+  color: #3498db;
+  font-size: 1.6rem;
+  font-weight: 650;
+}
+.medi-para {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.medi-para img {
+  margin-top: -2rem;
+  height: 100px;
+  width: 150px;
+}
+
+.facilities {
+  padding: 15px 2px;
+}
+.facilities i {
+  color: #ffff;
+  font-size: 1.8rem;
+}
+.facilities h4 {
+  color: #ffff;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+
+/* ************************services area sectin start***************************** */
+.show-serv .col img {
+  width: 260px;
+  height: 200px;
+  border-radius: 50px 10px 50px 0px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.show-serv .col img:hover {
+  transform: scale(1.1);
+  border-radius: 10px 50px 10px 50px;
+}
+.show-serv h4 {
+  color: #515457;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* ************************services area sectin end***************************** */
+
+/* contact us section start */
+#_contact {
+  padding: 1.5rem 0 3rem 0;
+  background-color: #f5f5f5 !important;
+}
+._part_one h2 {
+  font-size: 1.6rem;
+  color: #3c4043;
+  margin-bottom: 1rem;
+}
+.address_part i {
+  color: #ffff;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #3498db;
+}
+.details_part span {
+  margin-left: 10px;
+}
+.address_part h6 {
+  color: #3c4043;
+  font-size: 15px;
+}
+
+
+.box-1 {
+  color: #fff;
+}
+.box-1 h2 {
+  font-size: 1.3rem;
+}
+.box-1 h3 {
+  font-size: 1.2rem;
+}
+form .btn {
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #3498db !important;
+}
+form .btn:hover {
+  color: #fff !important;
+}
+form .btn:active {
+  color: #fff !important;
+  border: 1px solid #fff !important;
+  box-shadow: none !important;
+  background-color: #4b99cd !important;
+}
+/* contact us section end */
+
+/* footer section start */
+.footer {
+  padding: 4rem 0 0.5rem 0;
+  background-color: #3498db;
+}
+.section-1 {
+  color: #fff;
+}
+.section-1 img{
+  border-radius: 50%;
+}
+.section-1 h3 {
+  font-size: 1.3rem;
+}
+.section-1 h4 {
+  font-size: 1rem;
+}
+.footer-icons i {
+  margin: 0.8rem;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  transition: 0.2s linear;
+}
+.footer-icons i:hover {
+  transform: scale(1.3);
+}
+.section-1 a {
+  color: #fff;
+}
+hr {
+  color: #fff !important;
+  font-size: 4;
+  opacity: 1.25 !important;
+}
+/* footer section end */
+/* about page start */
+.caro-setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.car-set h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-family: var(--primary-font);
+  font-weight: 600;
+}
+.car-set span {
+  color: #184173;
+}
+.car-set P {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding: 10px 0;
+}
+.car-set button {
+  color: #184177;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.banner-btn {
+  display: flex;
+}
+#btn a{
+  color: #fff;
+}
+#btn {
+  color: #fff;
+  font-weight: semi-bold;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #3498db;
+  transition: 0.3s linear;
+}
+#btn:hover {
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  background-color: #184173;
+}
+/* first section start */
+.parent-divs {
+  position: absolute;
+  align-items: center;
+  top: 36.5rem;
+  margin-bottom: 5rem !important;
+  left: 6.5rem;
+  padding: 2rem 2rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 3px rgb(249, 249, 249);
+  background-color: #ffffff;
+  z-index: 1;
+}
+.sec_one h3 {
+  color: #184173;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.sec_one p {
+  width: 90%;
+  text-align: initial;
+}
+.sec_one h4 {
+  color: #184173;
+  font-size: 1.1rem;
+}
+.about-hospital {
+  padding-top: 20rem !important;
+}
+video {
+  width: 100%;
+  height: auto;
+}
+/* first section end */
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+}
+/* testimonial section start */
+
+.clients {
+  position: relative;
+  background-color: #020e15;
+  margin: 6rem 0 2rem 0;
+  padding: 1rem 0;
+}
+.testimonial {
+  position: relative;
+  margin: 80px 20px 40px !important;
+}
+.testimonial-content img {
+  position: absolute;
+  top: -1.8rem;
+  left: 5.5rem;
+  border: none;
+  border-radius: 50%;
+  align-items: center;
+  width: 60px !important;
+}
+.testimonial .testimonial-content {
+  padding: 35px 25px 35px 50px;
+  margin-bottom: 35px;
+  background: #fff;
+  position: relative;
+}
+.testimonial .testimonial-content:before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  border-top: 15px solid #718076;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.testimonial .testimonial-content:after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  border-top: 15px solid #718076;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.testimonial-content .testimonial-icon {
+  width: 50px;
+  height: 45px;
+  background: #0cca4a;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  line-height: 42px;
+  position: absolute;
+  top: 37px;
+  left: -19px;
+}
+.test_title_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.test_title_img img {
+  position: absolute;
+  align-items: center;
+  top: -3.8rem;
+  width: 120px;
+  border: 2px solid #05a739;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+.testimonial-content .testimonial-icon:before {
+  content: "";
+  border-bottom: 16px solid #05a739;
+  border-left: 18px solid transparent;
+  position: absolute;
+  top: -16px;
+  left: 1px;
+}
+.testimonial .description {
+  font-size: 15px;
+  font-style: italic;
+  color: #8a8a8a;
+  line-height: 23px;
+  margin: 0;
+}
+.testimonial .title {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #3498db;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 0 0 5px 0;
+}
+.testimonial .post {
+  display: block;
+  font-size: 14px;
+  color: #0cca4a;
+}
+.owl-theme .owl-controls {
+  margin-top: 20px;
+}
+.owl-theme .owl-controls .owl-page span {
+  background: #ccc;
+  opacity: 1;
+  transition: all 0.4s ease 0s;
+}
+/* .owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+    background: #0CCA4A !important;
+} */
+
+/* testimonial section end */
+
+/* accordion section start */
+.accordion-button {
+  border-radius: 0;
+  /* border: 2px solid; */
+  border: 2px solid #2e9ce6 !important;
+  margin: 0.5rem;
+}
+.accordion-button:active {
+  box-shadow: none !important;
+}
+.accordion-button:not(.collapsed) {
+  color: none !important;
+  background-color: none !important;
+  box-shadow: none !important;
+}
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: none !important;
+}
+.accordion-item {
+  border: none !important;
+}
+.accordion-item .accordion-button.collapsed {
+  color: #3c4043;
+  font-weight: 500;
+}
+.accordion-body {
+  color: #3c4043;
+  font-weight: 500;
+}
+
+/* table section here */
+
+.app-table table {    
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  display: none; /* Hide the table by default */
+}
+#consultationTable{
+  position: relative;
+  display: none;
+  width: 40%;
+  border: 1px solid rgb(240, 240, 240);
+  box-shadow: 0 2px 5px #b3b3b3;
+  padding: 1rem;
+  font-family: sans-serif;
+  margin-left: 20rem !important;  
+}
+
+#closeButton {
+  position: absolute;
+  top: 1.8rem;
+  right: 30.5rem;
+  display: none;
+  float: right;
+  background-color: #3498db;
+  border-radius: 50%;
+  padding: 3px 7px;
+  cursor: pointer;
+  z-index: 1;
+}
+.app-table th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.app-table th {
+  color: #fff;
+  background-color:#3498db;
+}
+
+
+button {
+  margin-bottom: 10px;
+}
+#t-color{
+  background-color: #eeeeee;
+}
+#tb-color{
+  color: #fff;
+  background-color: #3498db;
+}
+.app-table tr, th, td{
+text-align: center !important;
+}
+.team .row{
+  padding: 2rem 0;
+}
+.team-known{
+  background-color: rgb(252, 252, 252);
+}
+.team img{
+  border: 5px solid #2e9ce6;
+  padding: 0.5rem;
+  border-radius: 10% 40%;
+  width: 250px;
+
+}
+.team h2{
+  color: #3c4043;
+  font-size: 1.1rem;
+}
+.team span{
+  color: #433f3f;
+  font-size: 1rem;
+  line-height:1.5;
+}
+.team h3{
+  color: #3498db;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* loader here */
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: none; /* Hide initially */
+}
+
+.loader {
+  width: 150px;
+  height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+
+@media screen and (max-width: 991px) {
+  .navbar-toggler-icon {
+    font-size: 1rem;
+  }
+  .navbar-nav .nav-link:hover::before,
+  .navbar-nav .nav-link:hover::after {
+    display: none;
+  }
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show {
+    z-index: -1;
+  }
+  /* navbar background color change */
+}
+
+/* for desktop devservicesice */
+@media screen and (max-width: 991px) {
+  .owl-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .t-nav h2, span{
+    display: none;
+  }
+}
+
+/* for tablets device */
+@media screen and (max-width: 768px) {
+  /* logo section here */
+  /* alert section here */
+  .alert-sec h1 {
+    font-size: 24px;
+  }
+  .alert-sec h4 {
+    font-size: 16px;
+  }
+  /* owl carousel */
+  .owl-carousel .col .card img {
+    width: 280px;
+    height: 220px;
+    padding: 4px 27px 2px 31px;
+  }
+  .card-body {
+    width: 262px;
+  }
+  .owl-carousel .col .card {
+    width: 300px;
+    margin: 30px;
+  }
+  .owl-prev,
+  .owl-next {
+    margin: -13px 12px;
+    padding: 5px 10px;
+  }
+  .card-body p {
+    font-size: 18px;
+  }
+  /* service section here */
+  .services {
+    width: 336px !important;
+    margin: 10px;
+  }
+  /* contact section */
+  .contact .row {
+    padding: 0rem !important;
+  }
+  /* footer section here */
+  .footer-icons i {
+    margin: 0.5rem;
+  }
+  .section-1 a {
+    margin: 4px;
+  }
+  .owl-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .t-nav h2, span{
+    display: none;
+  }
+}
+/* for surface device */
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0 10px;
+  }
+  .carousel-item img {
+    height: 259px;
+  }
+  .g-3,
+  .gx-3 {
+    --bs-gutter-x: 1rem;
+  }
+  .services {
+    width: 246px !important;
+  }
+  .owl-carousel .col .card {
+    width: 250px;
+    margin: 0px;
+  }
+  .footer-icons i {
+    margin: 0 1.3rem;
+  }
+  .section-1 a {
+    margin: 7px;
+  }
+  .t-nav h2, span{
+    display: none;
+  }
+}
+/* for surface device */
+@media screen and (max-width: 550px) {
+
+  /* alert section here */
+  .alert-sec h1 {
+    font-size: 24px;
+  }
+  .alert-sec h4 {
+    font-size: 14px;
+  }
+  /* owl carousel */
+  .owl-carousel .col .card img {
+    width: 260px;
+    height: 206px;
+    padding: 4px 27px 2px 31px;
+  }
+  .card-body {
+    width: 262px;
+  }
+  .owl-carousel .col {
+    width: 450px;
+    margin: 0px;
+  }
+  .owl-carousel .col .card {
+    width: 229px;
+    margin: 30px;
+  }
+  .owl-prev,
+  .owl-next {
+    margin: -13px 12px;
+    padding: 5px 10px;
+  }
+  .owl-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .services {
+    width: 250px !important;
+    margin: 10px;
+  }
+  .facilities {
+    padding: -1px 2px;
+  }
+  .g-3,
+  .gy-3 {
+    --bs-gutter-y: 0rem;
+  }
+  .service .row {
+    padding: 0;
+  }
+
+  /* contact section */
+  .contact {
+    padding: 0px !important;
+  }
+  .contact .row {
+    padding: 10px !important;
+  }
+  /* footer section */
+  .footer {
+    padding: 0 !important;
+  }
+  .section-1 a {
+    font-size: 13px;
+  }
+  .footer-icons i {
+    margin: 1.8rem;
+    padding: 0;
+  }
+  .parent-divs {
+    margin: 0 10px;
+    top: 33rem;
+    left: 0rem;
+  }
+  .summary p {
+    width: 100%;
+}
+.hospital-title h1 {
+  width: 100%;
+}
+video {
+  width: 90%;
+}
+  /* services section  */
+  .carousel-item img {
+    height: 259px;
+    display: none;
+  }
+
+  #button-btn {
+    margin: 0 4rem;
+}
+.car-set h1 {
+  margin: 3rem 0;
+}
+.car-set P {
+  width: 88%;
+}
+.car-set P {
+  width: 88%;
+}
+.hospital-title h1 {
+  width: 93%;
+  padding: 1rem 0;
+}
+.hospital-title h1 {
+  width: 93%;
+}
+.health_section .card img {
+  width: 182% !important;
+  max-width: 250%;
+  height: 246px;
+  margin: 0;
+}
+.health_section h3 {
+  font-size: 23px;
+}
+.service .row {
+  padding: 114px;
+}
+video {
+  width: 81%;
+}
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+  width: 86%;
+  border-radius: 0;
+  margin: 0;
+}
+.testimonial .testimonial-content {
+  width: 88%;
+}
+.t-nav h2, span{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    margin: 0 10px;
+  }
+  .carousel-item img {
+    height: 212px;
+  }
+  .owl-carousel .col .card {
+    width: 298px;
+    margin: 0 0 0 80px;
+    align-items: center;
+  }
+  .services {
+    width: 215px !important;
+    margin: 10px;
+  }
+  .health_section .card img {
+    width: 153% !important;
+    max-width: 200%;
+    height: 245px;
+}
+.health_section h3 {
+  line-height: 2;
+  font-size: 24px;
+}
+#button-btn {
+  margin: 0 4rem;
+}
+.about-hospital {
+  padding-top: 25rem !important;
+}
+.about-hospital {
+  padding-top: 25rem !important;
+}
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+  border-radius: 0;
+  width: 86%;
+}
+.footer-icons i {
+  margin: 1rem 1.2rem;
+  padding: 0;
+}
+iframe{
+  width: 88%;
+}
+.t-nav h2, span{
+  display: none;
+}
+
+
+
+
+
+
+}
+/* for fold device */
+@media screen and (max-width: 280px) {
+  .top-hero {
+    display: none;
+  }
+  html {
+    font-size: 66%;
+  }
+  body {
+    margin: 0 5px;
+  }
+  .car-set h1 {
+    font-size: 2rem;
+    margin-top: 6rem;
+    line-height: 1.5;
+  }
+  .car-set p {
+    font-size: 1.2rem;
+  }
+  .caro-setting img {
+    display: none;
+  }
+
+  .about-hospital {
+    padding-top: 43rem !important;
+    margin: 0 -10px !important;
+  }
+  .parent-divs {
+    margin: 15px 10px;
+    top: 33rem;
+    left: 0rem;
+  }
+  p {
+    width: 100%;
+  }
+  .sec_one p {
+    color: #636363;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .sec_one h3 {
+    margin-top: 7px;
+  }
+  .time_table span {
+    color: #636363;
+    font-size: 1.2rem;
+  }
+  .dropdown-content {
+    width: 222px;
+  }
+  .dropdown-content-1 a {
+    width: 170px !important;
+  }
+  .navbar-nav .nav-link.active {
+    margin: 1px;
+    font-size: 12px;
+  }
+  /* carousel image */
+  .carousel-item img {
+    height: 100px !important;
+  }
+  /* alert section */
+  .alert-sec h1 {
+    font-size: 20px;
+  }
+  .alert-sec h4 {
+    font-size: 14px;
+  }
+  /* owl carousel  */
+  .owl-carousel .col .card img {
+    width: 260px;
+    height: 206px;
+    padding: 4px 27px 2px 31px;
+  }
+  .card-body {
+    width: 262px;
+  }
+  .card {
+    width: 320px !important;
+    height: auto !important;
+    padding: 0;
+    margin: 0 0 0 -10px !important;
+  }
+  .card img {
+    width: 200px !important;
+    height: 160px;
+    margin: 5px 0 0 20px;
+  }
+  .owl-carousel .col {
+    width: 252px;
+    margin: 10px;
+  }
+  .owl-prev,
+  .owl-next {
+    margin: -13px 12px;
+    padding: 5px 10px;
+  }
+  .owl-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  /* about hospital */
+  .about-hospital {
+    margin: 0 5px !important;
+}
+.health_section .card img {
+  width: 76% !important;
+}
+.health_section .card img {
+  width: 76% !important;
+}
+video {
+  width: 95%;
+}
+  .summary p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    width: 95%;
+  }
+  .pt-4 {
+    padding: 0 2rem !important;
+  }
+
+  .services {
+    margin: 0px;
+  }
+  .facilities {
+    margin: 0;
+    width: 100% !;
+  }
+  .contact {
+    padding: 0px !important;
+  }
+  .contact .row {
+    padding: 8px !important;
+  }
+  .footer-icons i {
+    margin: 1.2rem;
+  }
+  .section-1 a {
+    font-size: 8px;
+    padding: 0 -3px;
+  }
+  /* services section */
+  .show-serv {
+    margin: 0 10px;
+  }
+  /* contact section */
+  .address_part i {
+    color: #ffff;
+    font-size: 1rem;
+  }
+  .address_part h6 {
+    color: #3c4043;
+    font-size: 12px;
+  }
+  .section-1 img {
+    width: 50%;
+  }
+  .t-nav h2, span{
+    display: none;
+  }
+}
